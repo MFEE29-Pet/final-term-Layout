@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="product-list">
+    <meta name="description" content="product-detail">
     <meta name="author" content="Andy Lin">
     <link rel="shortcut icon" href="./logo/logo_orange.png">
 
-    <title>Pet伴-商品列表</title>
+    <title>Pet伴-商品細節</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,6 +34,7 @@
                     <a href="">
                         <p>所有商品</p>
                     </a>
+                    <img src="./icons/Vector.svg" alt="">
                 </li>
                 <li>
                     <p>狗勾</p>
@@ -42,41 +43,49 @@
                             <a href="">
                                 <p>罐頭</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>鮮食</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>飼料</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>乾糧</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>零食</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>保健</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>日常用品</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>玩具</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                     </ul>
                 </li>
@@ -87,41 +96,49 @@
                             <a href="">
                                 <p>罐頭</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>鮮食</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>飼料</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>乾糧</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>零食</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>保健</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>日常用品</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>玩具</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                     </ul>
                 </li>
@@ -130,7 +147,9 @@
                     <ul>
                         <li><a href="">
                                 <p>寵物攝影</p>
-                            </a></li>
+                            </a>
+                            <img src="./icons/Vector.svg" alt="">
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -151,6 +170,50 @@
                     </div>
                 </div>
         </section>
+        <section class="popup" role="dialog">
+            <div class="filter-popup">
+                <div class="filter-title">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <h2>價格範圍</h2>
+                    <div class="close">關閉</div>
+                </div>
+                <div class="price_input_form">
+                    <form method="get">
+                        <div class="price_input">
+                            <label for="min_price"></label>
+                            <input type="number" min='0' placeholder="最小值" name="min_price" id="min_price">
+                            <span> &#9473; </span>
+                            <label for="max_price"></label>
+                            <input type="number" placeholder="最大值" name="max_price" id="max_price">
+                        </div>
+                        <div class="btn-group">
+                            <!-- 使用自動填入? 還是get? 修改成input radio ?-->
+                            <button class="active">0-500</button>
+                            <button>500-1000</button>
+                            <button>1000-1500</button>
+                        </div>
+                        <!-- <button class="price_filter_submit">確定</button>
+                        <button class="price_filter_reset">重設</button> -->
+                    </form>
+                </div>
+                <div class="filter-title">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <h2>服務與促銷</h2>
+                </div>
+                <div class="service_sale_form">
+                    <form method="get">
+                        <!-- 被選取的話增加class active -->
+                        <label for="sale" class="active">特價促銷</label>
+                        <input type="radio" name="sale" id="sale">
+                        <label for="multi">多件優惠</label>
+                        <input type="radio" name="sale" id="multi">
+
+                        <button class="price_filter_submit">確定</button>
+                        <button class="price_filter_reset">重設</button>
+                    </form>
+                </div>
+            </div>
+        </section>
         <div class="go-to-top">
             <svg width="333" height="460" viewBox="0 0 333 460" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -160,7 +223,16 @@
         </div>
 
 
-
+        <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script>
+            $('.price-filter').click(() => {
+                $('section.popup').css('display', `block`);
+            })
+            $('.filter-popup .close').click(() => {
+                $('section.popup').attr('role', '').css('display', 'none')
+            });
+        </script>
 </body>
 
 </html>

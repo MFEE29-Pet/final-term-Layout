@@ -34,6 +34,7 @@
                     <a href="">
                         <p>所有商品</p>
                     </a>
+                    <img src="./icons/Vector.svg" alt="">
                 </li>
                 <li>
                     <p>狗勾</p>
@@ -42,41 +43,49 @@
                             <a href="">
                                 <p>罐頭</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>鮮食</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>飼料</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>乾糧</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>零食</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>保健</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>日常用品</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>玩具</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                     </ul>
                 </li>
@@ -87,41 +96,49 @@
                             <a href="">
                                 <p>罐頭</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>鮮食</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>飼料</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>乾糧</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>零食</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>保健</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>日常用品</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                         <li>
                             <a href="">
                                 <p>玩具</p>
                             </a>
+                            <img src="./icons/Vector.svg" alt="">
                         </li>
                     </ul>
                 </li>
@@ -130,7 +147,9 @@
                     <ul>
                         <li><a href="">
                                 <p>寵物攝影</p>
-                            </a></li>
+                            </a>
+                            <img src="./icons/Vector.svg" alt="">
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -376,7 +395,7 @@
         </section>
 
     </main>
-    <section class="popup">
+    <section class="popup" role="dialog">
         <div class="filter-popup">
             <div class="filter-title">
                 <i class="fa-solid fa-caret-right"></i>
@@ -433,9 +452,11 @@
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script>
         $('.price-filter').click(() => {
-            $('section.popup').css('transform', `translateX(0%)`);
+            $('section.popup').css('display', `block`);
         })
-        $('.filter-popup .close').click(() => $('section.popup').css('transform', `translateX(110%)`))
+        $('.filter-popup .close').click(() => {
+            $('section.popup').attr('role', '').css('display', 'none')
+        });
     </script>
 </body>
 
