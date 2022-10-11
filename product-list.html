@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="product-list">
+    <meta name="author" content="Andy Lin">
+    <link rel="shortcut icon" href="./logo/logo_orange.png">
+
+    <title>Pet伴-商品列表</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <!-- nav-bar -->
+    <!-- <nav>
+        <div class="navContainer"></div>
+    </nav> -->
+    <main>
+        <!-- side-bar -->
+        <section class="side-bar">
+            <div class="side-title">
+                <i class="fa-solid fa-list"></i>
+                <h1>分類</h1>
+            </div>
+            <ul class="categories">
+                <li>
+                    <a href="">
+                        <p>所有商品</p>
+                    </a>
+                </li>
+                <li>
+                    <p>狗勾</p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <p>罐頭</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>鮮食</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>飼料</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>乾糧</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>零食</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>保健</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>日常用品</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>玩具</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>貓咪</p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <p>罐頭</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>鮮食</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>飼料</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>乾糧</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>零食</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>保健</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>日常用品</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>玩具</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>其他</p>
+                    <ul>
+                        <li><a href="">
+                                <p>寵物攝影</p>
+                            </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="right">
+            <!-- filter -->
+            <div class="filter">
+                <!-- search-bar & price-filter -->
+                <div class="filter-s-p">
+                    <div class="search-bar">
+                        <input type="search" name="search" id="search">
+                        <i class="fa-solid fa-magnifying-glass" id="pro-search"></i>
+                    </div>
+                    <div class="price-filter">
+                        <i class="fa-solid fa-filter"></i>
+                        <p>篩選</p>
+                    </div>
+                </div>
+                <!-- filter-btn & page -->
+                <div class="filter-and-page">
+                    <div class="filter-btn-group">
+                        <!-- 判斷active -->
+                        <button class="newProduct active">最新商品</button>
+                        <button class="bestProduct">熱賣商品</button>
+                        <select name="priceSort" id="priceSort">
+                            <option value="">價格排序</option>
+                            <option value="positive">低到高</option>
+                            <option value="reverse">高到低</option>
+                        </select>
+                    </div>
+                    <div class="pageSel">
+                        <p>
+                            <span>1
+                                <!-- 用資料庫連接修改 -->
+                            </span>
+                            / 10
+                        </p>
+                        <div class="changeBtn">
+                            <div class="pre-page disable">
+                                <!-- 判斷式 +disable -->
+                                <i class="fa-solid fa-angle-left"></i>
+                            </div>
+                            <div class="next-page">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-list">
+                <div class="list-row">
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_1.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_6.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_3.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_4.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="list-row">
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_toy_1.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_toy_2.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_toy_3.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_toy_4.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="list-row">
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_1.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_6.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_3.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_4.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="list-row">
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_toy_1.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_toy_2.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_toy_3.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                    <div class="pro-card">
+                        <div class="img-wrap">
+                            <img src="./images/product_toy_4.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            <p>寵物商品</p>
+                            <p><s>$1,280</s> <span>$980</span></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="page">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="active">
+                            1
+                        </a>
+                    </li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">...</a></li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <section class="popup">
+        <div class="filter-popup">
+            <div class="filter-title">
+                <i class="fa-solid fa-caret-right"></i>
+                <h2>價格範圍</h2>
+                <div class="close">關閉</div>
+            </div>
+            <div class="price_input_form">
+                <form method="get">
+                    <div class="price_input">
+                        <label for="min_price"></label>
+                        <input type="number" min='0' placeholder="最小值" name="min_price" id="min_price">
+                        <span> &#9473; </span>
+                        <label for="max_price"></label>
+                        <input type="number" placeholder="最大值" name="max_price" id="max_price">
+                    </div>
+                    <div class="btn-group">
+                        <!-- 使用自動填入? 還是get? 修改成input radio ?-->
+                        <button class="active">0-500</button>
+                        <button>500-1000</button>
+                        <button>1000-1500</button>
+                    </div>
+                    <!-- <button class="price_filter_submit">確定</button>
+                    <button class="price_filter_reset">重設</button> -->
+                </form>
+            </div>
+            <div class="filter-title">
+                <i class="fa-solid fa-caret-right"></i>
+                <h2>服務與促銷</h2>
+            </div>
+            <div class="service_sale_form">
+                <form method="get">
+                    <!-- 被選取的話增加class active -->
+                    <label for="sale" class="active">特價促銷</label>
+                    <input type="radio" name="sale" id="sale">
+                    <label for="multi">多件優惠</label>
+                    <input type="radio" name="sale" id="multi">
+
+                    <button class="price_filter_submit">確定</button>
+                    <button class="price_filter_reset">重設</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="go-to-top">
+        <svg width="333" height="460" viewBox="0 0 333 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M32 64H300.5C318.2 64 332.5 49.7 332.5 32C332.5 14.3 318.2 0 300.5 0H32C14.3 0 0 14.3 0 32C0 49.7 14.3 64 32 64ZM48.7 212.5C36.2 225 36.2 245.3 48.7 257.8C61.2 270.3 81.5 270.3 94 257.8L135.3 216.4V321.75V427.1C135.3 444.8 149.6 459.1 167.3 459.1C185 459.1 199.3 444.8 199.3 427.1V216.4L240.7 257.8C253.2 270.3 273.5 270.3 286 257.8C298.5 245.3 298.5 225 286 212.5L190 116.5C177.5 104 157.2 104 144.7 116.5L48.7 212.5Z"
+                fill="#fff" />
+        </svg>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+        $('.price-filter').click(() => {
+            $('section.popup').css('transform', `translateX(0%)`);
+        })
+        $('.filter-popup .close').click(() => $('section.popup').css('transform', `translateX(110%)`))
+    </script>
+</body>
+
+</html>
