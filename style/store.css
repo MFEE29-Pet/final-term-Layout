@@ -107,13 +107,15 @@ section.right .filter-s-p {
   align-items: flex-end;
   justify-content: space-between;
 }
-section.right .filter-s-p .price-filter {
+section.right .filter-s-p .price-filter,
+section.right .filter-s-p .pro-loved {
   cursor: pointer;
   color: #40220f;
   display: flex;
   margin: 0 10px;
 }
-section.right .filter-s-p .price-filter i {
+section.right .filter-s-p .price-filter i,
+section.right .filter-s-p .pro-loved i {
   margin: 0 5px;
 }
 section.right .filter-btn-group {
