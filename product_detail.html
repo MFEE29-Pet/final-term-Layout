@@ -171,7 +171,29 @@
 
             <!-- products info -->
             <div class="product-info-div">
+                <div class="img-wrap">
+                    <img src="./images/product_1.png" alt="">
+                </div>
+                <div class="product-info-text">
+                    <!-- breadcrumb -->
+                    <nav class="nav-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">狗勾</a></li>
+                            <li class="breadcrumb-item">飼料</li>
+                        </ol>
+                    </nav>
+                    <div class="product-title-wrap">
+                        <h2>濃郁雞白罐頭</h2>
+                    </div>
+                    <div class="product-price-wrap">
+                        <p><span>$980</span><s>$1,280</s> </p>
+                    </div>
+                    <div class="product-info-text">
+                        <p>
 
+                        </p>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -182,6 +204,9 @@
 
         </section>
 
+        <section class="bottom-pro-line">
+
+        </section>
 
         <div class="go-to-top">
             <svg width="333" height="460" viewBox="0 0 333 460" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -195,7 +220,8 @@
         <script src="https://code.jquery.com/jquery-3.6.1.js"
             integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
         <script>
-
+            $('.pro-loved').mouseover((e) => $('.pro-loved i').toggleClass('fa-solid').toggleClass('fa-regular'));
+            $('.pro-loved').mouseout((e) => $('.pro-loved i').toggleClass('fa-regular').toggleClass('fa-solid'));
         </script>
 </body>
 

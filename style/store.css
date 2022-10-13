@@ -6,6 +6,13 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+p {
+  color: #40220f;
+}
+
 button,
 select {
   cursor: pointer;
@@ -117,6 +124,60 @@ section.right .filter-s-p .pro-loved {
 section.right .filter-s-p .price-filter i,
 section.right .filter-s-p .pro-loved i {
   margin: 0 5px;
+}
+section.right .product-info-div {
+  margin-top: 50px;
+  display: flex;
+}
+section.right .product-info-div .img-wrap {
+  width: 50%;
+}
+section.right .product-info-div .img-wrap img {
+  width: 100%;
+}
+section.right .product-info-div .product-info-text {
+  width: 50%;
+}
+section.right .product-info-div .product-info-text .nav-breadcrumb .breadcrumb {
+  display: flex;
+}
+section.right .product-info-div .product-info-text .nav-breadcrumb .breadcrumb li {
+  color: #c9bc9c;
+  margin: 0 3px;
+}
+section.right .product-info-div .product-info-text .nav-breadcrumb .breadcrumb li a {
+  color: #c9bc9c;
+}
+section.right .product-info-div .product-info-text .nav-breadcrumb .breadcrumb li a:hover {
+  color: #40220f;
+}
+section.right .product-info-div .product-info-text .nav-breadcrumb .breadcrumb li:nth-child(1)::after {
+  content: ">";
+  margin-left: 5px;
+}
+section.right .product-info-div .product-info-text .product-title-wrap {
+  margin: 20px 0;
+}
+section.right .product-info-div .product-info-text .product-title-wrap h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+section.right .product-info-div .product-info-text .product-price-wrap {
+  display: flex;
+  margin: 30px 0;
+}
+section.right .product-info-div .product-info-text .product-price-wrap p {
+  font-size: 18px;
+  color: #40220f;
+}
+section.right .product-info-div .product-info-text .product-price-wrap p s {
+  display: block;
+  color: rgba(130, 130, 130, 0.373);
+}
+section.right .product-info-div .product-info-text .product-price-wrap p span {
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
 }
 section.right .filter-btn-group {
   margin-top: 15px;
