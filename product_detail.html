@@ -163,9 +163,11 @@
                     <input type="search" name="search" id="search">
                     <i class="fa-solid fa-magnifying-glass" id="pro-search"></i>
                 </div>
-                <div class="pro-loved">
-                    <i class="fa-regular fa-heart"></i>
-                    <p>我的最愛</p>
+                <div class="pro-loved-list">
+                    <a href="">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>我的最愛</p>
+                    </a>
                 </div>
             </div>
 
@@ -182,16 +184,48 @@
                             <li class="breadcrumb-item">飼料</li>
                         </ol>
                     </nav>
+
                     <div class="product-title-wrap">
                         <h2>濃郁雞白罐頭</h2>
                     </div>
+
                     <div class="product-price-wrap">
                         <p><span>$980</span><s>$1,280</s> </p>
                     </div>
-                    <div class="product-info-text">
-                        <p>
 
+                    <div class="product-info-introduce">
+                        <p>
+                            如果別人做得到，那我也可以做到。透過逆向歸納，得以用最佳的策略去分析罐頭。儘管如此，別人往往卻不這麼想。李大釗說過一句富有哲理的話，人類的生活，必須時時刻刻拿最大的努力，向最高的理想擴張傳衍，流轉無窮，把那陳舊的組織、腐滯的機能一一的掃蕩摧清，別開一種新局面。這段話讓我的心境提高了一個層次。面對如此難題，我們必須設想周全。我們要從本質思考，從根本解決問題。
                         </p>
+                    </div>
+
+                    <div class="product-q-loved">
+                        <div class="product-quanity">
+                            <p>數量</p>
+                            <i class="fa-solid fa-minus q-reduce"></i>
+                            <p class="q-num">1</p>
+                            <i class="fa-solid fa-plus q-add"></i>
+                        </div>
+                        <div class="add-loved">
+                            <p>加入收藏</p> <i class="fa-regular fa-heart add-love-icon"></i><i
+                                class="fa-solid fa-heart add-love-icon hide"></i>
+                        </div>
+                    </div>
+
+                    <div class="sales-info">
+                        <ul>
+                            <li>
+                                <p>全店，消費滿$2000即享「宅配」免運費</p>
+                            </li>
+                            <li>
+                                <p>全店，消費滿$2000即享「超取」免運費</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="buy-button-group">
+                        <button class="cart-btn">加入購物車</button>
+                        <button class="buy-btn">立即購買</button>
                     </div>
                 </div>
             </div>
@@ -220,8 +254,9 @@
         <script src="https://code.jquery.com/jquery-3.6.1.js"
             integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
         <script>
-            $('.pro-loved').mouseover((e) => $('.pro-loved i').toggleClass('fa-solid').toggleClass('fa-regular'));
-            $('.pro-loved').mouseout((e) => $('.pro-loved i').toggleClass('fa-regular').toggleClass('fa-solid'));
+            $('.pro-loved-list').mouseover((e) => $('.pro-loved-list i').toggleClass('fa-solid').toggleClass('fa-regular'));
+            $('.pro-loved-list').mouseout((e) => $('.pro-loved-list i').toggleClass('fa-regular').toggleClass('fa-solid'));
+            $('.add-loved').click((e) => $('.add-love-icon').toggleClass('active').toggleClass('hide'));
         </script>
 </body>
 
