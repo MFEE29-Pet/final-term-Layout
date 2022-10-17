@@ -156,7 +156,6 @@ section.right .product-info-div {
   margin-top: 50px;
   display: flex;
   position: relative;
-  height: 90%;
 }
 section.right .product-info-div .img-wrap {
   width: 50%;
@@ -286,6 +285,48 @@ section.right .product-info-div .product-info-text .buy-button-group .buy-btn {
   color: #f8b62d;
   border: 1px solid #f8b62d;
   background-color: #fff5de;
+}
+section.right .score-div {
+  display: flex;
+  flex-direction: column;
+}
+section.right .score-div .score-title-wrap {
+  text-align: center;
+  margin: 30px 0;
+}
+section.right .score-div .score-title-wrap h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+section.right .score-div .score-content {
+  display: flex;
+}
+section.right .score-div .score-content .star-score {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+section.right .score-div .score-content .score-reply {
+  display: flex;
+  width: 50%;
+}
+section.right .score-div .score-content .score-reply .reply-card {
+  display: flex;
+}
+section.right .score-div .score-content .score-reply .reply-card .user-img-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+section.right .score-div .score-content .score-reply .reply-card .user-img-wrap img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 150%;
+  position: absolute;
+  left: -20px;
 }
 section.right .filter-btn-group {
   margin-top: 15px;
