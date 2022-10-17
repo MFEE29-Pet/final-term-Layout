@@ -298,6 +298,11 @@ section.right .score-div .score-title-wrap h2 {
   font-size: 24px;
   font-weight: bold;
 }
+section.right .score-div .score-title-wrap h2::before,
+section.right .score-div .score-title-wrap h2::after {
+  content: "-";
+  margin: 0 5px;
+}
 section.right .score-div .score-content {
   display: flex;
 }
