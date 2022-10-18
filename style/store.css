@@ -292,7 +292,7 @@ section.right .score-div {
 }
 section.right .score-div .score-title-wrap {
   text-align: center;
-  margin: 30px 0;
+  margin: 50px 0;
 }
 section.right .score-div .score-title-wrap h2 {
   font-size: 24px;
@@ -305,19 +305,77 @@ section.right .score-div .score-title-wrap h2::after {
 }
 section.right .score-div .score-content {
   display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  position: relative;
 }
-section.right .score-div .score-content .star-score {
-  width: 50%;
+section.right .score-div .score-content .star-score-total {
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+section.right .score-div .score-content .star-score-total .score {
+  margin-bottom: 10px;
+}
+section.right .score-div .score-content .star-score-total .score h1 {
+  font-size: 96px;
+  margin: 15px 0;
+  letter-spacing: 10px;
+}
+section.right .score-div .score-content .star-score-total .stars {
+  display: flex;
+}
+section.right .score-div .score-content .star-score-total .stars i {
+  color: #f8b62d;
+}
+section.right .score-div .score-content .star-score-total .stars .write-reply {
+  margin-left: 150px;
+  display: flex;
+}
+section.right .score-div .score-content .star-score-total .stars .write-reply p {
+  margin-left: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+section.right .score-div .score-content .star-score-total .stars .write-reply i.fa-message-pen {
+  color: #40220f;
+}
+section.right .score-div .score-content .star-score-total .stars-progress {
+  display: flex;
+  flex-direction: column;
+}
+section.right .score-div .score-content .star-score-total .stars-progress .progress-item {
+  margin: 10px 0;
+}
+section.right .score-div .score-content .star-score-total .stars-progress .progress-item label {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+section.right .score-div .score-content .star-score-total .stars-progress .progress-item progress {
+  width: 80%;
+  height: 12px;
+}
+section.right .score-div .score-content .star-score-total .stars-progress progress,
+section.right .score-div .score-content .star-score-total progress::-webkit-progress-bar {
+  background-color: #c9caca;
+  border-radius: 20px;
+}
+section.right .score-div .score-content .star-score-total .stars-progress progress,
+section.right .score-div .score-content .star-score-total progress::-webkit-progress-value {
+  background-color: #f8b62d;
+  border-radius: 20px;
+}
 section.right .score-div .score-content .score-reply {
   display: flex;
-  width: 50%;
+  width: 60%;
+  padding: 0 5px;
+  flex-direction: column;
+  justify-content: space-around;
 }
 section.right .score-div .score-content .score-reply .reply-card {
   display: flex;
+  align-items: center;
 }
 section.right .score-div .score-content .score-reply .reply-card .user-img-wrap {
   width: 80px;
@@ -332,6 +390,29 @@ section.right .score-div .score-content .score-reply .reply-card .user-img-wrap 
   width: 150%;
   position: absolute;
   left: -20px;
+}
+section.right .score-div .score-content .score-reply .reply-card .star-reply {
+  flex: 1;
+  margin: 0 20px;
+}
+section.right .score-div .score-content .score-reply .reply-card .star-reply .star-score {
+  margin: 10px 0;
+}
+section.right .score-div .score-content .score-reply .reply-card .star-reply .star-score i {
+  color: #f8b62d;
+}
+section.right .score-div .score-content .score-reply .reply-card .star-reply .reply-text p {
+  font-size: 14px;
+  color: #956134;
+}
+section.right .score-div .see-more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+section.right .score-div .see-more a {
+  text-decoration: none;
+  color: #40220f;
 }
 section.right .filter-btn-group {
   margin-top: 15px;
