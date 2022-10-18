@@ -571,6 +571,8 @@ section.right .page ul li a.active {
 section.history {
   width: 15%;
   height: 100%;
+  position: absolute;
+  right: 0;
 }
 section.history .history-side-div {
   width: 180px;
@@ -582,6 +584,7 @@ section.history .history-side-div .div-title-seen {
   background-color: #c9bc9c;
   border-radius: 15px 0 0 0;
   display: flex;
+  padding: 5px 0;
 }
 section.history .history-side-div .div-title-seen h2 {
   color: #fff;
@@ -603,9 +606,8 @@ section.history .history-side-div .div-product-seen {
 section.history .history-side-div .div-product-seen .product-img-wrap {
   height: 30%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5px 0;
+  text-align: center;
+  padding: 5px;
 }
 section.history .history-side-div .div-product-seen .product-img-wrap img {
   width: 60%;
