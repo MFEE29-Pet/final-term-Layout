@@ -568,6 +568,49 @@ section.right .page ul li a.active {
   background: center top/70% no-repeat url(/icons/Vector.svg);
 }
 
+section.history {
+  width: 15%;
+  height: 100%;
+}
+section.history .history-side-div {
+  width: 180px;
+  height: 400px;
+}
+section.history .history-side-div .div-title-seen {
+  width: 100%;
+  height: 15%;
+  background-color: #c9bc9c;
+  border-radius: 15px 0 0 0;
+  display: flex;
+}
+section.history .history-side-div .div-title-seen h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  align-self: center;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+section.history .history-side-div .div-product-seen {
+  height: 90%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 0 15px;
+}
+section.history .history-side-div .div-product-seen .product-img-wrap {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+section.history .history-side-div .div-product-seen .product-img-wrap img {
+  width: 60%;
+}
+
 section.popup {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.152);
