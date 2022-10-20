@@ -210,6 +210,7 @@ section.right .product-info-div .product-info-text .product-price-wrap p span {
 section.right .product-info-div .product-info-text .product-info-introduce {
   width: 100%;
   margin-bottom: 25px;
+  min-height: 168px;
 }
 section.right .product-info-div .product-info-text .product-info-introduce p {
   display: block;
