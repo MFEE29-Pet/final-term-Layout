@@ -1,0 +1,187 @@
+body {
+  background-color: #fff5de;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #40220f;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+main {
+  width: 1200px;
+  margin: 50px auto;
+}
+main .nav-breadcrumb {
+  margin: 20px 0 50px 0;
+}
+main .nav-breadcrumb .breadcrumb {
+  display: flex;
+}
+main .nav-breadcrumb .breadcrumb li {
+  color: #c9bc9c;
+  margin: 0 3px;
+}
+main .nav-breadcrumb .breadcrumb li a {
+  color: #c9bc9c;
+}
+main .nav-breadcrumb .breadcrumb li a:hover {
+  color: #40220f;
+}
+main .nav-breadcrumb .breadcrumb li span {
+  margin-left: 5px;
+}
+main .nav-breadcrumb .breadcrumb li:nth-child(1)::after {
+  content: ">";
+  margin-left: 5px;
+}
+main .nav-breadcrumb .breadcrumb li:nth-child(2)::after {
+  content: ">";
+  margin-left: 5px;
+}
+main .photographer-form {
+  background-color: #fff;
+  width: 90%;
+  border-radius: 15px;
+  padding: 50px 80px;
+}
+main .photographer-form h1 {
+  font-size: 24px;
+  color: #40220f;
+  font-weight: bold;
+}
+main .photographer-form .photographer-name {
+  display: flex;
+  color: #40220f;
+  margin: 20px 0;
+  align-items: flex-end;
+}
+main .photographer-form .photographer-name i {
+  margin-right: 20px;
+  color: #f8b62d;
+}
+main .photographer-form .photographer-name p {
+  color: #40220f;
+  font-size: 14px;
+}
+main .photographer-form form input {
+  border-radius: 20px;
+  border: 2px solid #dcdddd;
+  padding: 5px 15px;
+  color: #727171;
+  font-size: 14px;
+}
+main .photographer-form form select {
+  border-radius: 20px;
+  border: 2px solid #dcdddd;
+  padding: 5px 15px;
+  color: #727171;
+}
+main .photographer-form form h2 {
+  color: #956134;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 50px 30px;
+}
+main .photographer-form form .reserve-time label {
+  color: #40220f;
+  font-weight: bold;
+  margin: 0 80px 0 30px;
+}
+main .photographer-form form .reserve-time input,
+main .photographer-form form .reserve-time select {
+  margin-right: 10px;
+  width: 120px;
+}
+main .photographer-form form .reserve-time select {
+  padding-top: 7px;
+}
+main .photographer-form form .member-data {
+  display: block;
+}
+main .photographer-form form .member-data div {
+  margin: 30px 0;
+}
+main .photographer-form form .member-data label {
+  color: #40220f;
+  font-weight: bold;
+  margin: 0 80px 0 30px;
+}
+main .photographer-form form .member-data input {
+  margin-left: 30px;
+}
+main .photographer-form form .member-data input#name {
+  width: 100px;
+}
+main .photographer-form form .member-data input#address {
+  width: 300px;
+}
+main .photographer-form form .member-data select {
+  margin-left: 30px;
+}
+main .photographer-form form .pet-data div {
+  margin: 30px 0;
+}
+main .photographer-form form .pet-data label {
+  color: #40220f;
+  font-weight: bold;
+  margin: 0 80px 0 30px;
+}
+main .photographer-form form .pet-data input {
+  margin-left: 30px;
+}
+main .photographer-form form .pet-data input#pet-name,
+main .photographer-form form .pet-data #pet-age {
+  width: 100px;
+}
+main .photographer-form form .pet-data .pet-image {
+  display: flex;
+  align-items: flex-start;
+}
+main .photographer-form form .pet-data .pet-image .img-file-wrap {
+  width: 150px;
+  height: 120px;
+  border: 1px dashed #dcdddd;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+main .photographer-form form .pet-data .pet-image .img-file-wrap p,
+main .photographer-form form .pet-data .pet-image .img-file-wrap i {
+  color: #dcdddd;
+  margin-bottom: 10px;
+}
+main .photographer-form form .pet-data .pet-image .img-file-wrap p {
+  font-weight: bold;
+}
+
+.go-to-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.664);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  cursor: pointer;
+}
+.go-to-top svg {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=photo.css.map */
