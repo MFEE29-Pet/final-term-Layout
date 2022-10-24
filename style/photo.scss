@@ -13,6 +13,9 @@ $p_gray_dark_color: #727171;
 $p_gray_light_color: #dcdddd;
 $p_gray_light_color2: #efefef;
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: $d-main-color;
@@ -87,6 +90,7 @@ main {
         width: 90%;
         border-radius: 15px;
         padding: 50px 80px;
+        margin: 0 auto;
 
         h1 {
             font-size: $h1size;

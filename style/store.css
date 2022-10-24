@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fff5de;
 }
@@ -99,7 +103,7 @@ section.right .search-bar #pro-search {
   color: #fff5de;
   text-align: center;
   padding-top: 5px;
-  height: 20px;
+  height: 25px;
   background-color: #f8b62d;
   width: 25px;
   margin: 0;
